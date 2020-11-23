@@ -1,7 +1,8 @@
 <?php
 include('../controller/regcheck.php');
 
-if(isset($_SESSION['fname'])){
+if(isset($_SESSION['fname']))
+{
 header("location: ../controller/reginsert.php");
 }
 ?>
@@ -19,18 +20,22 @@ header("location: ../controller/reginsert.php");
     <table align="center">
         <tr>
             <td><label>First Name</label></td>
-            <td><label>:</label> <input type="text" name="fname" required><br><?php echo $fnameErr;?></td>
+            <td><label>:</label> <input type="text" name="fname" required>
+            <p><font color=red><?php echo $fnameErr;?></font></p>
+            </td>
         </tr>
         <tr>
             <tr><td><hr style="width:250%"></td></tr></tr>
         <tr>
             <td><label>Last Name</label></td>
-            <td><labe>:</label><input type="text" name="lname" required><br><?php echo $lnameErr;?></td>
+            <td><labe>:</label><input type="text" name="lname" required>
+            <p><font color=red><?php echo $fnameErr;?></font></p>
+            </td>
         </tr>
         <tr><td><hr style="width:250%"></td></tr>
         <tr>
             <td><label>Email</label></td>
-            <td><labe>:</label><input type="email" name="email" required><br><?php echo $emailErr;?></td>
+            <td><labe>:</label><input type="text" name="email" required><br><?php echo $emailErr;?></td>
         </tr>
         <tr><td><hr style="width:250%"></td></tr>
         <tr>

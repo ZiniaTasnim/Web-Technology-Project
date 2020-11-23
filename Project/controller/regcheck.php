@@ -19,7 +19,7 @@ if (isset($_POST['submit']))
 {
 
     $fname = test_input($_POST["fname"]);
-    $fname = test_input($_POST["fname"]);
+    $lname = test_input($_POST["lname"]);
     $email = test_input($_POST["email"]);
 
 
